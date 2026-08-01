@@ -47,6 +47,7 @@ main {
     border-radius: 12px;
 }
 
+
 .about-text {
     max-width: 650px;
 }
@@ -101,15 +102,15 @@ main {
 
 
 .project-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 30px;
-    flex-wrap: wrap;
     margin-top: 35px;
 }
 
 
 .project {
-    width: 180px;
+    width: 100%;
     aspect-ratio: 0.75;
     position: relative;
     overflow: hidden;
@@ -159,8 +160,14 @@ footer {
 
 @media (max-width: 700px) {
 
+    main {
+        padding: 40px 20px;
+    }
+
+
     .about {
         flex-direction: column;
+        gap: 30px;
     }
 
 
@@ -185,8 +192,34 @@ footer {
     }
 
 
-    .project {
-        width: 180px;
+    .about-text {
+        max-width: 100%;
+    }
+
+
+    .about-text h1,
+    .projects h1 {
+        font-size: 36px;
+    }
+
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+
+    .project-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+}
+
+
+@media (max-width: 380px) {
+
+    .project-list {
+        grid-template-columns: 1fr;
     }
 
 }
