@@ -1,17 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
-    font-family: Arial, sans-serif;
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #111;
-    color: #eee;
+    background: #404043;
+    color: white;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
-a {
-    color: #4da3ff;
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 30px;
 }
 
-h1 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
+
+.about {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+
+.profile-wrapper {
+    width: 230px;
+    flex-shrink: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    padding-right: 30px;
+}
+
+
+.profile {
+    width: 180px;
+    height: 180px;
+}
+
+
+.profile img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.about-text {
+    max-width: 650px;
+}
+
+
+.subtitle {
+    color: #aaaaaa;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+
+.about-text h1,
+.projects h1 {
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    color: #dddddd;
+}
+
+
+.about-links {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+
+.about-links a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.about-links a:hover {
+    text-decoration: underline;
+}
+
+
+.projects {
+    margin-top: 50px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+.project-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+
+.project {
+    width: 180px;
+    aspect-ratio: 0.75;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.65);
+    text-align: center;
+}
+
+
+.overlay span {
+    color: white;
+    font-size: 16px;
+}
+
+
+footer {
+    margin-top: 100px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    color: #999;
+    text-align: center;
+}
+
+
+@media (max-width: 700px) {
+
+    .about {
+        flex-direction: column;
+    }
+
+
+    .profile-wrapper {
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 30px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+
+    .profile {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .profile img {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .project {
+        width: 180px;
+    }
+
 }
