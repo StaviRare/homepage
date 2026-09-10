@@ -1,115 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stavi Rare</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<main>
-
-    <section class="about">
-
-        <div class="profile-wrapper">
-            <div class="profile">
-                <img src="assets/profile.jpg" alt="Stavi Rare">
-            </div>
-        </div>
-
-        <div class="about-text">
-
-            <div class="subtitle">
-                GAME TECHNOLOGY · ENGINE DEVELOPMENT
-            </div>
-
-            <h1>About Me</h1>
-
-            <p>
-                Fell in love with gaming at the age of 5. Started modding with the
-                Source Engine at 16 and began prototyping and self-learning Unity Engine in 2013.
-                Started building my own custom engine as a hobby in 2024, exploring
-                rendering, engine architecture, and low-level systems.
-            </p>
-
-            <p>
-                Working professionally with game technology and environments since 2018,
-                with experience across Unity, Unreal, Cocos2d-x, Cocos Creator, Construct 3,
-                and custom engine environments. Worked across multiple platforms including
-                Windows, Android, macOS, iOS, GDK, UWP, PS4, and PS5.
-            </p>
-
-            <p>
-                Experienced with C++, C#, Python, Java, and other programming languages,
-                with a focus on graphics programming, engine development, automation,
-                testing, debugging, and building scalable systems from the ground up.
-            </p>
-
-            <p>
-                Previously worked in the film industry as a producer. Outside of technology,
-                I enjoy cooking, gaming, and exploring new ideas. Always happy to meet new
-                people and pursue interesting challenges.
-            </p>
-
-            <div class="about-links">
-                <a href="https://github.com/StaviRare" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/stav-raskin-remeniuk-30016a138/" target="_blank">LinkedIn</a>
-                <a href="mailto:stavirare@gmail.com">Contact</a>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="projects">
-
-        <h1>Projects</h1>
-
-        <div class="project-list">
-
-            <a class="project" href="https://github.com/StaviRare/Root3D" target="_blank">
-                <img src="assets/root3d.jpg" alt="Root3D">
-                <div class="overlay">
-                    <span>Game Engine</span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stavi Rare</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <section class="about">
+                <div class="profile-wrapper">
+                    <div class="profile">
+                        <img src="assets/profile.jpg" alt="Stavi Rare" />
+                    </div>
                 </div>
-            </a>
 
+                <div class="about-text">
+                    <div class="subtitle">GAME TECHNOLOGY · ENGINE DEVELOPMENT</div>
 
-            <div class="project">
-                <img src="assets/time-project.jpg" alt="Untitled Time Project">
-                <div class="overlay">
-                    <span>Untitled Time Project</span>
+                    <h1>About Me</h1>
+
+                    <p>
+                        Fell in love with gaming at the age of 5. Started modding with the Source Engine at 16 and began
+                        prototyping and self-learning Unity Engine in 2013. Started building my own custom engine as a
+                        hobby in 2024, exploring rendering, engine architecture, and low-level systems.
+                    </p>
+
+                    <p>
+                        Working professionally with game technology and environments since 2018, with experience across
+                        Unity, Unreal, Cocos2d-x, Cocos Creator, Construct 3, and custom engine environments. Worked
+                        across multiple platforms including Windows, Android, macOS, iOS, GDK, UWP, PS4, and PS5.
+                    </p>
+
+                    <p>
+                        Experienced with C++, C#, Python, Java, and other programming languages, with a focus on
+                        graphics programming, engine development, automation, testing, debugging, and building scalable
+                        systems from the ground up.
+                    </p>
+
+                    <p>
+                        Previously worked in the film industry as a producer. Outside of technology, I enjoy cooking,
+                        gaming, and exploring new ideas. Always happy to meet new people and pursue interesting
+                        challenges.
+                    </p>
+
+                    <div class="about-links">
+                        <a href="https://github.com/StaviRare" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/stav-raskin-remeniuk-30016a138/" target="_blank"
+                            >LinkedIn</a
+                        >
+                        <a href="mailto:stavirare@gmail.com">Contact</a>
+                    </div>
                 </div>
-            </div>
+            </section>
 
+            <section class="projects">
+                <h1>Projects</h1>
 
-            <div class="project">
-                <img src="assets/propane-simulator.jpg" alt="Propane Simulator">
-                <div class="overlay">
-                    <span>Unity Game</span>
+                <div class="project-list">
+                    <a class="project" href="https://github.com/StaviRare/Root3D" target="_blank">
+                        <img src="assets/root3d.jpg" alt="Root3D" />
+
+                        <div class="overlay">
+                            <span>Game Engine</span>
+                        </div>
+                    </a>
+
+                    <div class="project" onclick="toggleProject(this)">
+                        <img src="assets/time-project.jpg" alt="Untitled Time Project" />
+
+                        <div class="overlay">
+                            <span>Untitled Time Project</span>
+                        </div>
+
+                        <div class="project-info">
+                            <h2>Untitled Time Project</h2>
+
+                            <p>Personal project developed for PC.</p>
+
+                            <span class="project-status"> In development </span>
+                        </div>
+                    </div>
+
+                    <div class="project" onclick="toggleProject(this)">
+                        <img src="assets/propane-simulator.jpg" alt="Propane Simulator" />
+
+                        <div class="overlay">
+                            <span>Unity Game</span>
+                        </div>
+
+                        <div class="project-info">
+                            <h2>Propane Simulator</h2>
+
+                            <p>Previously released Unity mobile game, now delisted.</p>
+
+                            <span class="project-status"> Available upon request </span>
+                        </div>
+                    </div>
+
+                    <div class="project" onclick="toggleProject(this)">
+                        <img src="assets/city-rush.jpg" alt="City Rush" />
+
+                        <div class="overlay">
+                            <span>Unreal Game</span>
+                        </div>
+
+                        <div class="project-info">
+                            <h2>City Rush</h2>
+
+                            <p>Previously released Unreal mobile game, now delisted.</p>
+
+                            <span class="project-status"> Available upon request </span>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
 
+            <footer>Powered by problem solving.</footer>
+        </main>
 
-            <div class="project">
-                <img src="assets/city-rush.jpg" alt="City Rush">
-                <div class="overlay">
-                    <span>Unreal Game</span>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <footer>
-        Powered by problem solving.
-    </footer>
-
-</main>
-
-</body>
+        <script>
+            function toggleProject(project) {
+                project.classList.toggle("expanded");
+            }
+        </script>
+    </body>
 </html>
